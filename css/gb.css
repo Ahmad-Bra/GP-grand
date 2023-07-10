@@ -1,0 +1,703 @@
+:root{
+    --tran: .4s
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #ffc451;
+}
+h1,
+h2,
+h3
+h4,
+h5,
+h6{
+    font-family: "Raleway", sans-serif;
+}
+/* start navbar */
+
+.navbar{
+    background-color: rgb(0, 0,0,90%);
+}
+.navbar .logo a{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+.navbar button svg{
+    color: white;
+    font-size: 25px;
+}
+.navbar h1 a span{
+    color: #ffc451;
+}
+.navbar ul li{
+    margin-right: 40px;
+    font-weight: 600;
+}
+.navbar .navbar-toggler {
+    border: 1px solid #ffc451;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar input{
+    background-color: transparent;
+    border: 2px solid #ffc451;
+    padding: 7px 20px;
+    color: white;
+}
+.navbar input:hover{
+    background-color: #ffc451 ;
+    color: black;
+    transition: var(--tran);
+}
+.navbar .navbar-nav a:not(.active){
+    color: white;
+}
+.navbar .navbar-nav a:not(.active):hover{
+    color: #ffc451;
+    transition: var(--tran);
+}
+/* ENd navbar */
+/* start landind */
+.heading{
+    background-image: url(../img/hero-bg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+@media (max-width:767px) {
+.heading{
+    height: auto;
+}
+}
+.heading::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0 ,60%);
+}
+.heading .container{
+    color: white;
+}
+.heading  .text{
+    padding-top: 60px;
+}
+.heading  .text h1{
+    font-size: 55px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+}
+@media (max-width:767px) {
+    .heading  .text h1 {
+        font-size: 30px;
+    }
+    .heading  .text h2{
+        font-size: 18px;
+    }
+}
+.heading  .text h1 span{
+    color: #ffc451;
+}
+.heading  .text h2{
+    font-size: 25px;
+    margin: 10px 0;
+}
+.heading .container .box{
+    padding: 30px 20px;
+    text-align: center;
+    border: 1px solid rgba( 255, 255, 255, .3);
+    transition: ease-in-out var(--tran);
+    height: 100%;
+}
+.heading .container .box:hover{
+    border: 1px solid #ffc451;
+}
+.heading .container .box svg{
+    color: #ffc451;
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+.heading .container .box h4{
+    font-weight: 700;
+    font-size: 21px;
+    cursor: pointer;
+    transition: ease-in-out var(--tran);
+
+}
+.heading .container .box h4:hover{
+    color: #ffc451;
+    transition: ease-in-out var(--tran);
+}
+.content .info h3{
+    color: rgb(0, 0, 0 ,.8);
+    font-family: "Poppins", sans-serif;
+}
+.content .info  ul li{
+    list-style: none;
+padding-bottom: 10px;
+}
+.content .info  ul li svg{
+    margin-right: 10px;
+    color: #ffc451;
+    margin-left: -30px;
+} 
+.icons img{
+    filter:contrast(0);
+    transition: ease-in-out var(--tran);
+}
+.icons img:hover{
+    filter:contrast(1);
+}
+.bob .check{
+    background-color: #ffc451;
+}
+.bob li{
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #eee;
+    margin-left: 8px;
+    list-style: none;
+    cursor: pointer;
+    padding: 5px;
+}
+.content-2 .info-2 svg{
+    font-size: 40px;
+    color: #ffc451;
+    margin-right: 20px;
+}
+.content-2 .info-2 h4{
+    color: rgb(0, 0, 0 ,.7);
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+/* ENd landind */
+/* start services */
+.title span{
+    color: #aaa ;
+    letter-spacing: 2px;
+    font-weight: 600;
+    position: relative;
+}
+.title h1{
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    width: fit-content;
+}
+.title span::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: #ffc451;
+    left: 160px;
+    top: 50%;
+    transform: translateX(-50%);
+}
+.services .container .box{
+    padding: 80px 30px;
+    border: 1px solid #eee;
+    transition: ease-in-out var(--tran);
+}
+.services .container .box:hover{
+    transform: translateY(-15px);
+    transition: ease-in-out var(--tran);
+    box-shadow: 0 0 5px 0 #eee
+    ,0 0 10px 0 #eee
+    ,0 0 30px 0 #eee
+}
+.services .container .box svg{
+    font-size: 25px;
+    background-color: #ffc451;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 20px;
+}
+.services .container .box h3 a{
+    color: black;
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 5px;
+    transition: ease-in-out var(--tran);
+}
+.services .container .box h3 a:hover{
+    color: #ffc451;
+    transition: ease-in-out var(--tran);
+}
+.services .container .box p{
+    font-weight: 200;
+}
+/* End services */
+/* start action */
+.action{
+    background-image: url(/img/cta-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+}
+.action::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0 ,60%);
+}
+.action .container{
+    position: relative;
+    color: white;
+}
+.action .container h4{
+    font-family: "Raleway", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+}
+.action .container p{
+    font-weight: normal;
+
+}
+.action .container a{
+    color: white;
+    padding: 10px 30px;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 6px;
+    display: block;
+    width: fit-content;
+    margin: 20px auto 0;
+    transition: ease-in-out var(--tran);
+}
+.action .container a:hover{
+    color: black;
+    transition: ease-in-out var(--tran);
+    background-color: #ffc451;
+    border: 1px solid #ffc451;
+}
+.portfolio .title span::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: #ffc451;
+    left: 160px;
+    top: 50%;
+    transform: translateX(-50%);
+}
+.portfolio ul .active{
+    color: black !important;
+    background-color: #ffc451 !important;
+    padding: 8px 10px !important;
+}
+.portfolio ul li {
+    list-style: none;
+    font-weight: 600;
+}
+.portfolio ul li a{
+    color: black;
+    transition: ease-in-out var(--tran);
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    margin-right: 5px;
+}
+.portfolio ul li a:not(.active):hover{
+    transition: ease-in-out var(--tran);
+    background-color: #ffc451;
+}
+/* ENd action */
+.img-holder{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    gap: 20px;
+}
+.img-holder .box{
+    height: fit-content;
+    position: relative;
+    overflow: hidden;
+    transition: ease-in-out var(--tran);
+}
+.img-holder .box::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0 ,60%);
+    opacity: 0;
+    z-index: 100;
+}
+.img-holder .gp{
+    height: fit-content;
+    display: grid;
+    place-self: end;
+}
+.img-holder .box .port-text{
+    position: absolute;
+    left: 20px;
+    bottom: 48px;
+    color: white;
+    z-index: 100;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    transition: ease-in-out var(--tran);
+    opacity: 0;
+}
+.img-holder .box .port-text p{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+}
+.img-holder .box .port-text span{
+    color: #ddd;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.img-holder .box .port-link{
+    position: absolute;
+    left: 20px;
+    bottom: 15px;
+    transition: ease-in-out var(--tran);
+    opacity: 0;
+    z-index: 100;
+}
+.img-holder .box .port-link a{
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: ease-in-out var(--tran);
+    padding: 5px;
+}
+.img-holder .box .port-link a:hover{
+    color: #ffc451;
+    transition: ease-in-out var(--tran);
+}
+.img-holder .box img{
+    transition: ease-in-out var(--tran);
+}
+.img-holder .box:hover img{
+    transform: scale(1.2);
+    transition: ease-in-out var(--tran);
+}
+.img-holder .box:hover .port-link,
+.img-holder .box:hover .port-text,
+.img-holder .box:hover::before{
+    transition: ease-in-out var(--tran);
+    opacity: 1;
+}
+.content-3 .info-3 h1{
+    color: #151515;
+    font-weight: 700;
+    font-size: 34px;
+}
+.content-3 .info-3 .box-holder h3{
+    font-weight: 700;
+    font-size: 30px;
+    padding: 0 0 5px ;
+}
+.content-3 .info-3 .box-holder svg{
+    color: #ffc451;
+    font-size: 35px;
+    margin-right: 15px;
+    margin-top: 4px;
+}
+.teste{
+    background-image: url(/img/testimonials-bg.jpg);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.teste::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0 ,60%);
+}
+.teste .card-test {
+    transition: var(--tran);
+}
+.teste .card-test:hover{
+    border-left: 1px solid #ddd;
+    transition: ease-in-out var(--tran);
+    padding-left: 15px;
+}
+.teste .person {
+    margin-top: 10px;
+}
+.teste .person img{
+    width: 100px;
+    margin-bottom: 10px ;
+    border-radius: 50%;
+    border: 5px solid rgb(230, 230, 230,10%);
+}
+.teste .person h3{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+}
+.teste .person span{
+    color: #ddd;
+}
+.teste .card-test svg{
+    color: #ddd;
+}
+.teste .card-test p {
+    color: #ddd;
+    padding: 15px;
+}
+/* start team */
+.team .title span::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: #ffc451;
+    left: 110px;
+    top: 50%;
+    transform: translateX(-50%);
+}
+.team .card{
+    border: none;
+    box-shadow: 0 0 5px 0 #eee
+    ,0 0 10px 0 #eee,
+    0 0 12px 3px #eee;
+    position: relative;
+}
+.team .card-body{
+    padding: 15px 10px;
+}
+.team .card-body h4{
+    font-size: 18px;
+    color: #151515;
+}
+.team .card-body p{
+    color: #aaa;
+    font-size: 14px;
+}
+.team .card .social{
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    bottom: 110px;
+    opacity: 0;
+    transition: ease-in-out var(--tran);
+} 
+.team .card:hover .social{
+    bottom: 100px;
+    opacity: 1;
+    transition: ease-in-out var(--tran);
+}
+.team .card .social svg{
+    padding: 10px ;
+    background-color: rgb(255, 255, 255, 70%);
+    transition: ease-in-out var(--tran);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.team .card .social svg:hover{
+    background-color: #ffc451;
+    transition: ease-in-out var(--tran);
+}
+/* End team */
+/* start contact */
+.contact .title span::after{
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: #ffc451;
+    left: 143px;
+    top: 50%;
+    transform: translateX(-50%);
+}
+.contact .map .icon{
+    right: 20px;
+    bottom: 20px;
+    background-color: white;
+    color: #151515;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.contact .map .icon svg:nth-child(1){
+    padding: 10px;
+    border-bottom: 1px solid #aaa;
+}
+.contact .map img:hover{
+cursor: grab;
+}
+.contact .map .view{
+    top: 20px;
+    left: 20px;
+    background-color: white;
+    border-radius: 6px;
+    padding: 5px 10px;
+}
+.contact .map .view a{
+    color: rgb(35, 35, 187);
+    font-size: 16px;
+    font-weight: 500;
+    transition: ease-in-out var(--tran);
+}
+.contact .map .view a:hover{
+    text-decoration: underline;
+    transition: ease-in-out var(--tran);
+}
+.contact .info .text-info svg{
+    font-size: 20px ;
+    margin-right: 10px;
+    padding: 15px;
+    background-color: #ffc451;
+    border-radius: 6px;
+    color: black;
+}
+.contact .info .text-info h3{
+    color: #151515;
+}
+.contact .info .text-info span{
+    font-size: 15px;
+    font-weight: 300;
+    color: black;
+}
+.contact input,
+.contact textarea{
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 6px;
+}
+.contact textarea:focus,
+.contact input:focus{
+    outline: none;
+    border: 1px solid #f9ca6c;
+    transition: ease-in-out var(--tran);
+}
+.contact input[type="submit"]{
+    background-color: #ffc451;
+    margin: 0 auto;
+    display: block;
+}
+.contact input[type="submit"]:hover{
+    background-color: #f9ca6c;
+    transition: ease-in-out var(--tran);
+}
+/* End contact */
+/* start footer */
+.footer{
+    background-color: #151515;
+    border-bottom: 2px solid #202020;
+}
+.footer h3 a{
+    color: white;
+}
+.footer h3 span{
+    color: #f9ca6c;
+    font-weight: bolder;
+}
+.footer p{
+    color: white;
+    font-size: 14px;
+}
+.footer .social svg{
+    background-color: rgb(255, 255, 255,10%);
+    padding: 10px;
+    margin-right: 3px;
+    border-radius: 6px;
+    font-size: 18px;
+    color: white;
+    transition: ease-in-out var(--tran);
+    cursor: pointer;
+}
+.footer .social svg:hover{
+    color: black;
+    background-color: #f9ca6c;
+    transition: ease-in-out var(--tran);
+}
+.footer h4{
+    color: white;
+    font-size: 18px;
+    margin-left: 20px;
+}
+.footer ul li{
+    list-style: none;
+    padding-bottom: 15px;
+}
+.footer ul li svg{
+    color: #ffc451; 
+    margin-right: 10px;
+}
+.footer ul li a{
+    color: white;
+    transition: ease-in-out var(--tran);
+}
+.footer ul li a:hover{
+    color: #ffc451;
+    transition: ease-in-out var(--tran);
+}
+.footer input{
+    border: none;
+    border-radius: 6px 0 0 6px;
+    padding: 10px;
+}
+.footer input[type="submit"]{
+    border-radius: 0 6px 6px 0;
+    background-color: #ffc451;
+}
+.footer div input:focus{
+    outline: none;
+}
+.end .stick{
+    color: black;
+    padding: 7px 14px;
+    border-radius: 6px;
+    background-color: #ffc451;
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    font-size: 20px;
+    transition: ease-in-out var(--tran);
+}
+.end .stick:hover{
+    background-color: black;
+    color: #ffc451;
+    transition: ease-in-out var(--tran);
+}
+.end{
+    background-color: black;
+}
+.end p{
+    color: white;
+    margin: 0;
+}
+.end span{
+    font-size: 14px;
+    color: white;
+}
+.end .gold{
+    color: #ffc451;
+    font-weight: 700;
+}
+
+/* ENd footer */
